@@ -9,6 +9,9 @@ It loads javascripts in sequence - promisesless
 # Where to use it
 In small projects where you need to quickly load your js libraries in sequence
 
+# Typical case
+When you have several core libraries like Jquery, jquery UI and other ones that have dependences that make critical the order which they're loaded (this is just a rough function, NOT a tool for solving [mutual interdipendence](https://en.wikipedia.org/wiki/Circular_dependency) )
+
 # How to use it
 Basically loading it as first javascript.
 Then calling the loadseq function passing an array of javascript paths.
